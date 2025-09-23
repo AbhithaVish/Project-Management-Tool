@@ -4,7 +4,7 @@ A simple **Project Management Tool** built using **pure HTML, CSS, and
 JavaScript** with drag-and-drop functionality, add/edit/delete features,
 and a modern UI design.
 
-`https://abhithavish.github.io/Project-Management-Tool/`
+[Software On Live](https://abhithavish.github.io/Project-Management-Tool/)
 
 ---
 
