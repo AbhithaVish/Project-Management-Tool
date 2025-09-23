@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Team Task Board</h1>
+  <button id="addTaskBtn">+ Add Task</button>
+
+  <div class="board">
+    <div class="column" id="Pending">
+      <h2>Pending</h2>
+    </div>
+    <div class="column" id="Working">
+      <h2>Working</h2>
+    </div>
+    <div class="column" id="HOLD">
+      <h2>HOLD</h2>
+    </div>
+    <div class="column" id="Completed">
+      <h2>Completed</h2>
+    </div>
+  </div>
+
+  <!-- Modal for Add/Edit Task -->
+  <div id="taskModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2 id="modalTitle">Add Task</h2>
+      <input type="text" id="taskIdInput" placeholder="Job ID">
+      <input type="text" id="assigneeInput" placeholder="Assignee">
+      <select id="statusInput">
+        <option value="Pending">Pending</option>
+        <option value="Working">Working</option>
+        <option value="HOLD">HOLD</option>
+        <option value="Completed">Completed</option>
+      </select>
+      <button id="saveTaskBtn">Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

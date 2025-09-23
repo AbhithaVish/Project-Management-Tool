@@ -1,0 +1,138 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#addTaskBtn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#addTaskBtn:hover {
+  background: #0056b3;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: 220px;
+  min-height: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.column:hover {
+  transform: translateY(-2px);
+}
+
+.column h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.task {
+  background: #eaf4ff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.task:hover {
+  background: #d0e6ff;
+}
+
+.task button {
+  background: transparent;
+  border: none;
+  color: #ff4d4d;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.task button.edit {
+  color: #007bff;
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content input,
+.modal-content select {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#saveTaskBtn {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#saveTaskBtn:hover {
+  background: #218838;
+}
+
+#closeModal {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  color: #999;
+}
+
+#closeModal:hover {
+  color: #333;
+}
